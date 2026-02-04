@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "cc.dstm"
-version = "1.0"
+version = "1.0.0"
 
 val targetJavaVersion = 21
 kotlin {

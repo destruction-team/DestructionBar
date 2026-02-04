@@ -4,7 +4,7 @@ import net.kyori.adventure.audience.Audience
 import net.kyori.adventure.bossbar.BossBar
 import org.bukkit.Location
 import org.bukkit.entity.Player
-import java.util.UUID
+import java.util.*
 import java.util.concurrent.ConcurrentHashMap
 
 class BarManager(val plugin: Main) {
@@ -40,6 +40,7 @@ class BarManager(val plugin: Main) {
         return best
     }
 
+    // Чтобы одновременно не проделывать две операции с поинтед барами для одного игрока
     private val locks = ConcurrentHashMap<UUID, Any>()
     fun <T> withPlayerLock(player: Player, block: () -> T): T {
         val lock = locks.computeIfAbsent(player.uniqueId) { Any() }
@@ -53,7 +54,6 @@ class BarManager(val plugin: Main) {
 
             val currentBarPoint = getBarPoint(player.location)
             val oldPointedBossBar = pointedBossBars[player.uniqueId]
-            val defaultBar = this.defaultBar
 
             if (currentBarPoint != null) {
                 if (oldPointedBossBar != null) {
@@ -76,9 +76,8 @@ class BarManager(val plugin: Main) {
                     // Вышёл из точки
                     // Убираем точку совсем
                     setPoint(player, null)
-                } else {
-                    // Двигался вне точек - пофиг (дефолт бар добавляется при заходе)
                 }
+                // Если двигался вне точек - пофиг (дефолт бар добавляется при заходе)
             }
         }
     }

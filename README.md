@@ -31,8 +31,8 @@ default:
   # https://jd.advntr.dev/api/4.26.1/net/kyori/adventure/bossbar/BossBar.Flag.html
   # Доступные флаги: CREATE_WORLD_FOG, DARKEN_SCREEN, PLAY_BOSS_MUSIC
   flags:
-    - CREATE_FOG
-    - DARKEN_SKY
+    - CREATE_WORLD_FOG
+    - DARKEN_SCREEN
 
 test-point:
 
