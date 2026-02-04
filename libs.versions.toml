@@ -1,0 +1,21 @@
+[versions]
+paper-server = "1.21.1"
+paper-api = "1.21.1-R0.1-SNAPSHOT"
+
+# https://github.com/JetBrains/kotlin/releases
+kotlin = "2.3.0"
+
+# https://github.com/jpenilla/run-task/releases
+runPaperTask = "3.0.2"
+
+# https://github.com/GradleUp/shadow/releases
+gradleupShadow = "9.3.0"
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+gradleupShadow = { id = "com.gradleup.shadow", version.ref = "gradleupShadow" }
+runPaperTask = { id = "xyz.jpenilla.run-paper", version.ref = "runPaperTask" }
+
+[libraries]
+paper-api = { module = "io.papermc.paper:paper-api", version.ref = "paper-api" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }

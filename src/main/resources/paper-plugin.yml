@@ -1,0 +1,8 @@
+name: DestructionBar
+version: ${version}
+authors: [ envizar ]
+
+api-version: '1.21'
+main: cc.dstm.destructionBar.Main
+loader: cc.dstm.destructionBar.Loader
+
