@@ -1,0 +1,17 @@
+default:
+
+  # https://docs.papermc.io/adventure/minimessage/format/
+  title: ''
+
+  # https://jd.advntr.dev/api/4.26.1/net/kyori/adventure/bossbar/BossBar.Color.html
+  # Доступные цвета: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+  color: WHITE
+
+  # https://jd.advntr.dev/api/4.26.1/net/kyori/adventure/bossbar/BossBar.Overlay.html
+  # Доступные стили: PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
+  style: PROGRESS
+
+  # https://jd.advntr.dev/api/4.26.1/net/kyori/adventure/bossbar/BossBar.Flag.html
+  # Доступные флаги: CREATE_WORLD_FOG, DARKEN_SCREEN, PLAY_BOSS_MUSIC
+  flags:
+    - CREATE_WORLD_FOG
