@@ -1,3 +1,5 @@
+<img src="assets/logo.png" alt="logo" height="128" width="128" />
+
 # DestructionBar
 
 Плагин, который добавляет боссбар (с возможностью сделать туман) и точки,
