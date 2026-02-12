@@ -13,7 +13,7 @@ class BarManager(val plugin: Main) {
     var defaultBarOptions: BarOptions? = null
         set(newBarOptions) {
 
-            defaultBar?.let { oldBar -> oldBar.viewers().forEach { oldBar.removeViewer(it as Audience) } }
+            defaultBar?.let { oldBar -> oldBar.viewers().toList().forEach { oldBar.removeViewer(it as Audience) } }
             defaultBar = newBarOptions?.createBar()
 
             field = newBarOptions
