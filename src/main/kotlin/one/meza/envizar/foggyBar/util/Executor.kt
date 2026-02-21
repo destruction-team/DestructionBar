@@ -1,4 +1,4 @@
-package cc.dstm.destructionBar.util
+package one.meza.envizar.foggyBar.util
 
 import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin

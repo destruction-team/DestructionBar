@@ -1,6 +1,6 @@
-package cc.dstm.destructionBar
+package one.meza.envizar.foggyBar
 
-import cc.dstm.destructionBar.util.runAsync
+import one.meza.envizar.foggyBar.util.runAsync
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.player.PlayerJoinEvent

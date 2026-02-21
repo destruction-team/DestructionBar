@@ -1,4 +1,4 @@
-rootProject.name = "DestructionBar"
+rootProject.name = "FoggyBar"
 
 dependencyResolutionManagement {
     versionCatalogs {

@@ -1,4 +1,4 @@
-package cc.dstm.destructionBar
+package one.meza.envizar.foggyBar
 
 import org.bukkit.Location
 

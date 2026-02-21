@@ -4,8 +4,8 @@ plugins {
     alias(libs.plugins.runPaperTask)
 }
 
-group = "cc.dstm"
-version = "1.0.1"
+group = "one.meza.envizar"
+version = "1.0.2"
 
 val targetJavaVersion = 21
 kotlin {
@@ -27,7 +27,7 @@ dependencies {
 
 tasks {
     runServer {
-        minecraftVersion(libs.versions.paper.server.get())
+        minecraftVersion("1.21.11")
     }
 
     // output jar with shaded libs

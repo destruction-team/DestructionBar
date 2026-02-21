@@ -1,4 +1,4 @@
-package cc.dstm.destructionBar;
+package one.meza.envizar.foggyBar;
 
 import io.papermc.paper.plugin.loader.PluginClasspathBuilder;
 import io.papermc.paper.plugin.loader.PluginLoader;

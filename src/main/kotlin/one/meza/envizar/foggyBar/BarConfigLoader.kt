@@ -1,4 +1,4 @@
-package cc.dstm.destructionBar
+package one.meza.envizar.foggyBar
 
 import net.kyori.adventure.bossbar.BossBar
 import org.bukkit.configuration.ConfigurationSection

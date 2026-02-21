@@ -1,8 +1,8 @@
-name: DestructionBar
+name: FoggyBar
 version: ${version}
 authors: [ envizar ]
 
 api-version: '1.21'
-main: cc.dstm.destructionBar.Main
-loader: cc.dstm.destructionBar.Loader
+main: one.meza.envizar.foggyBar.Main
+loader: one.meza.envizar.foggyBar.Loader
 
